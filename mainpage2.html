@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime Zone</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url("image/2.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      header {
+        height: 80px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        transition: top 0.6s;
+        position: sticky;
+        top: 0;
+        display: flex;
+        align-items: center;
+        z-index: 999;
+      }
+
+      .header-title {
+        color: white;
+        text-shadow: 3px 3px 3px rgb(243, 73, 73);
+        font-size: 2em;
+        margin-left: 45%;
+        text-align: center;
+      }
+      .link {
+        margin-left: 250px;
+
+        text-decoration: none;
+        color: red;
+        font-size: larger;
+      }
+      .link1 {
+        margin-left: 10px;
+        text-decoration: none;
+        color: red;
+        font-size: larger;
+      }
+
+      .main-image {
+        margin: 10px 0;
+        width: 100%;
+        height: auto;
+      }
+      .heading {
+        text-align: left;
+        color: white;
+        margin: 20px;
+        text-shadow: 1px 1px 2px black;
+      }
+      .anime-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px 0;
+      }
+      .anime-card {
+        border-radius: 10px;
+        width: 40vh;
+        margin: 8px;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+      }
+      .anime-card img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+      .anime-title {
+        margin: 10px 0;
+        font-size: larger;
+        text-shadow: 1px 1px 2px black;
+      }
+      .top-anime-section {
+        margin: 20px;
+      }
+
+      .top-anime-title,
+      .top-anime-description {
+        font-size: large;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+      }
+      .anime-info-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px 0;
+      }
+      .anime-info-card {
+        border-radius: 10px;
+        width: 50vh;
+        margin: 10px;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+      }
+      .anime-info-card img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+      .anime-info-content {
+        width: 100%;
+        padding: 10px;
+        font-size: larger;
+      }
+      footer {
+        height: 80px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .footer-title {
+        color: white;
+        text-shadow: 3px 3px 3px rgb(243, 73, 73);
+        font-size: 2em;
+        margin-left: 40%;
+        text-align: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+      }
+      form input {
+        margin: 10px 0;
+        padding: 10px;
+        font-size: large;
+      }
+      form button {
+        padding: 10px 20px;
+        font-size: large;
+        cursor: pointer;
+      }
+
+      @media (max-width: 768px) {
+        .anime-card,
+        .anime-info-card {
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="header-title">Anime Zone</h1>
+      <div class="link">
+        <a class="link1" href="#anime">Anime</a>
+        <a class="link1" href="#topanime">Top Anime</a>
+        <a class="link1" href="#login">Log in</a>
+      </div>
+    </header>
+    <img class="main-image" src="image/11.jpg" alt="Main Anime Image" />
+    <h1 class="heading" id="anime">Anime</h1>
+    <div class="anime-gallery">
+      <div class="anime-card">
+        <p class="anime-title">Name</p>
+        <img src="image/3.jpg" alt="Anime Image" />
+      </div>
+      <div class="anime-card">
+        <p class="anime-title">Name</p>
+        <img src="image/4.jpg" alt="Anime Image" />
+      </div>
+      <div class="anime-card">
+        <p class="anime-title">Name</p>
+        <img src="image/5.jpg" alt="Anime Image" />
+      </div>
+      <div class="anime-card">
+        <p class="anime-title">Name</p>
+        <img src="1image/6.jpg" alt="Anime Image" />
+      </div>
+      <div class="anime-card">
+        <p class="anime-title">Name</p>
+        <img src="image/7.jpg" alt="Anime Image" />
+      </div>
+      <div class="anime-card">
+        <p class="anime-title">Name</p>
+        <img src="image/8.jpg" alt="Anime Image" />
+      </div>
+      <div class="anime-card">
+        <p class="anime-title">Name</p>
+        <img src="image/9.jpg" alt="Anime Image" />
+      </div>
+      <div class="anime-card">
+        <p class="anime-title">Name</p>
+        <img src="image/10.jpg" alt="Anime Image" />
+      </div>
+    </div>
+
+    <div class="top-anime-section" id="topanime">
+      <h1 class="top-anime-title">Top Anime</h1>
+      <p class="top-anime-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+        corporis ipsam perspiciatis quia, nemo dicta ex temporibus tempore illo
+        tenetur vero consectetur eveniet omnis architecto, odit incidunt?
+        Delectus iste cupiditate praesentium voluptates eum dolor consequatur
+        rerum esse, hic harum natus rem animi, nemo provident porro id molestias
+        obcaecati molestiae, unde similique officia! Dolorum natus aspernatur
+        corporis, dicta exercitationem iure a dolorem quas voluptatum sapiente
+        rerum nihil molestias? Necessitatibus sequi tempora officiis porro ipsa
+        perspiciatis velit ducimus. Nulla aperiam laboriosam mollitia voluptatem
+        id ab minima impedit facilis maiores numquam, atque natus et reiciendis?
+        Exercitationem fugit odit sapiente distinctio obcaecati incidunt omnis.
+      </p>
+    </div>
+    <div class="anime-info-section">
+      <div class="anime-info-card">
+        <img src="image/4.jpg" alt="Anime Image" />
+        <div class="anime-info-content">
+          <p>Name:</p>
+          <p>Episode:</p>
+          <p>Type:</p>
+        </div>
+      </div>
+      <div class="anime-info-card">
+        <img src="image/5.jpg" alt="Anime Image" />
+        <div class="anime-info-content">
+          <p>Name:</p>
+          <p>Episode:</p>
+          <p>Type:</p>
+        </div>
+      </div>
+      <div class="anime-info-card">
+        <img src="image/7.jpg" alt="Anime Image" />
+        <div class="anime-info-content">
+          <p>Name:</p>
+          <p>Episode:</p>
+          <p>Type:</p>
+        </div>
+      </div>
+      <div class="anime-info-card">
+        <img src="image/8.jpg" alt="Anime Image" />
+        <div class="anime-info-content">
+          <p>Name:</p>
+          <p>Episode:</p>
+          <p>Type:</p>
+        </div>
+      </div>
+      <div class="anime-info-card">
+        <img src="image/9.jpg" alt="Anime Image" />
+        <div class="anime-info-content">
+          <p>Name:</p>
+          <p>Episode:</p>
+          <p>Type:</p>
+        </div>
+      </div>
+      <div class="anime-info-card">
+        <img src="image/10.jpg" alt="Anime Image" />
+        <div class="anime-info-content">
+          <p>Name:</p>
+          <p>Episode:</p>
+          <p>Type:</p>
+        </div>
+      </div>
+    </div>
+    <h1 class="top-anime-title" id="login">Log in</h1>
+    <p class="top-anime-description">Get new Notification fast</p>
+    <form>
+      <input type="text" placeholder="Username" />
+      <input type="password" placeholder="Password" />
+      <button>Log in</button>
+    </form>
+    <img class="main-image" src="image/12.jpg" alt="Secondary Anime Image" />
+    <footer>
+      <h1 class="footer-title">ZORO</h1>
+      <div class="link">
+        <a class="link1" href="#anime">Anime</a>
+        <a class="link1" href="#topanime">Top Anime</a>
+        <a class="link1" href="#login">Log in</a>
+      </div>
+    </footer>
+    <script>
+      let lastScrollTop = 0;
+      const header = document.getElementById("header");
+
+      window.addEventListener("scroll", function () {
+        let scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+          header.style.top = "-80px";
+        } else {
+          header.style.top = "0";
+        }
+        lastScrollTop = scrollTop;
+      });
+    </script>
+  </body>
+</html>
